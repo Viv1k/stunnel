@@ -612,8 +612,8 @@ extern GETNAMEINFO s_getnameinfo;
 
 #endif /* USE_WIN32 */
 
-int getnameinfo(const struct sockaddr *, socklen_t,
-    char *, size_t, char *, size_t, int);
+//int getnameinfo(const struct sockaddr *, socklen_t,
+//    char *, size_t, char *, size_t, int);
 
 #endif /* !defined HAVE_GETNAMEINFO */
 

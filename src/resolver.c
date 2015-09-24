@@ -571,6 +571,7 @@ const char *s_gai_strerror(int err) {
 /* implementation is limited to functionality needed by stunnel */
 
 #ifndef HAVE_GETNAMEINFO
+#if 0 
 int getnameinfo(const struct sockaddr *sa, socklen_t salen,
     char *host, size_t hostlen, char *serv, size_t servlen, int flags) {
 
@@ -598,6 +599,7 @@ int getnameinfo(const struct sockaddr *sa, socklen_t salen,
     /* ignore servlen since it's long enough in stunnel code */
     return 0;
 }
+#endif
 #endif
 
 /* end of resolver.c */
